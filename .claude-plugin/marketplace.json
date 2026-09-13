@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "manimce-claude",
+  "owner": {
+    "name": "havaianasdestruido",
+    "url": "https://github.com/havaianasdestruido"
+  },
+  "description": "Skill de referencia para Manim Community Edition (ManimCE) para Claude Code.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "manim-community-plugin",
+      "source": "./plugins/manim-community-plugin",
+      "description": "Reference skill for Manim Community Edition (ManimCE) - installation, core concepts, CLI/config, TeX, and a cookbook of recipes.",
+      "category": "development",
+      "keywords": ["manim", "manimce", "animation", "python", "math", "education"]
+    }
+  ]
+}
