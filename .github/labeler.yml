@@ -1,0 +1,199 @@
+# GitHub Labeler Configuration for manimce-claude
+# Automatically assigns labels to pull requests based on file paths and content patterns
+
+# Core Concepts & Mental Model
+core-concepts:
+  - changed-files:
+      - any-glob-to-any-file: 'references/core-concepts.md'
+  - head-branch:
+      - /^(feature|fix)\/.*mobject/i
+      - /^(feature|fix)\/.*animation/i
+      - /^(feature|fix)\/.*scene/i
+
+# Installation & Setup
+installation:
+  - changed-files:
+      - any-glob-to-any-file: 'references/installation.md'
+  - head-branch:
+      - /^(feature|fix)\/.*install/i
+      - /^(feature|fix)\/.*setup/i
+      - /^(feature|fix)\/.*checkhealth/i
+
+# CLI & Configuration
+cli-config:
+  - changed-files:
+      - any-glob-to-any-file: 'references/cli-and-config.md'
+  - head-branch:
+      - /^(feature|fix)\/.*cli/i
+      - /^(feature|fix)\/.*config/i
+      - /^(feature|fix)\/.*quality/i
+      - /^(feature|fix)\/.*render/i
+
+# Text & LaTeX
+text-tex:
+  - changed-files:
+      - any-glob-to-any-file: 'references/text-and-tex.md'
+  - head-branch:
+      - /^(feature|fix)\/.*tex/i
+      - /^(feature|fix)\/.*text/i
+      - /^(feature|fix)\/.*latex/i
+      - /^(feature|fix)\/.*font/i
+
+# Cookbook & Recipes
+cookbook:
+  - changed-files:
+      - any-glob-to-any-file: 'references/cookbook.md'
+  - head-branch:
+      - /^(feature|fix)\/.*cookbook/i
+      - /^(feature|fix)\/.*recipe/i
+      - /^(feature|fix)\/.*axes/i
+      - /^(feature|fix)\/.*camera/i
+      - /^(feature|fix)\/.*3d/i
+      - /^(feature|fix)\/.*plot/i
+
+# Mobject-related changes
+mobject:
+  - changed-files:
+      - any-glob-to-any-file: 'references/core-concepts.md'
+  - commit-message:
+      - /mobject/i
+      - /vmobject/i
+      - /group/i
+
+# Animation-related changes
+animation:
+  - commit-message:
+      - /animation/i
+      - /create/i
+      - /fade/i
+      - /transform/i
+      - /animate/i
+
+# Main skill document
+skill-doc:
+  - changed-files:
+      - any-glob-to-any-file: 'SKILL.md'
+  - head-branch:
+      - /^docs\//i
+
+# Quick reference updates
+quick-reference:
+  - changed-files:
+      - any-glob-to-any-file: 'SKILL.md'
+  - commit-message:
+      - /quick reference/i
+      - /common mobjects/i
+      - /common animations/i
+      - /positioning/i
+      - /styling/i
+
+# Common pitfalls & troubleshooting
+troubleshooting:
+  - commit-message:
+      - /pitfall/i
+      - /troubleshoot/i
+      - /debug/i
+      - /error/i
+      - /blank video/i
+      - /synaxerror/i
+
+# ManimCE-specific topics
+manimce:
+  - commit-message:
+      - /manimce/i
+      - /community edition/i
+      - /3blue1brown/i
+      - /v0\.21/i
+
+# Disambiguation content
+reference:
+  - changed-files:
+      - any-glob-to-any-file: 'references/**'
+  - head-branch:
+      - /^(docs|reference)\//i
+
+# Breaking changes or API updates
+breaking-change:
+  - commit-message:
+      - /breaking/i
+      - /deprecated/i
+      - /renamed/i
+      - /migration/i
+
+# Documentation
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'SKILL.md'
+  - head-branch:
+      - /^docs\//i
+
+# Example code or samples
+example:
+  - commit-message:
+      - /example/i
+      - /sample/i
+      - /snippet/i
+      - /minimal example/i
+  - head-branch:
+      - /^example\//i
+
+# LaTeX-related (Tex, MathTex)
+latex:
+  - commit-message:
+      - /latex/i
+      - /tex/i
+      - /mathte[x]/i
+      - /typst/i
+
+# Windows-specific issues
+windows:
+  - commit-message:
+      - /windows/i
+      - /wsl/i
+
+# macOS-specific issues
+macos:
+  - commit-message:
+      - /macos/i
+      - /mac/i
+      - /osx/i
+
+# Linux-specific issues
+linux:
+  - commit-message:
+      - /linux/i
+      - /ubuntu/i
+      - /debian/i
+
+# Dependency or package management
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'requirements.txt'
+          - 'setup.py'
+          - 'pyproject.toml'
+          - 'Pipfile'
+  - commit-message:
+      - /pip install/i
+      - /uv/i
+      - /conda/i
+      - /docker/i
+
+# Tests and validation
+testing:
+  - head-branch:
+      - /^test\//i
+      - /^tests?\//i
+  - commit-message:
+      - /test/i
+      - /unittest/i
+      - /pytest/i
+
+# Help-related (beginner-friendly)
+help-wanted:
+  - commit-message:
+      - /for beginners/i
+      - /quick start/i
+      - /getting started/i
