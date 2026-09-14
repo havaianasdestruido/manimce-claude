@@ -22,6 +22,69 @@ activate.", rode esse comando.
 npx skills add havaianasdestruido/manimce-claude --skill manim-community
 ```
 
+Uma instalação com êxito se pareceria com isso:
+
+```
+PS C:\Users\mcmco\manimce-claude> npx skills add havaianasdestruido/manimce-claude --skill manim-community
+npm notice run npx
+npm notice run skills add havaianasdestruido/manimce-claude --skill manim-community
+
+███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+███████╗█████╔╝ ██║██║     ██║     ███████╗
+╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+███████║██║  ██╗██║███████╗███████╗███████║
+╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+
+┌   skills
+│
+◇  Source: https://github.com/havaianasdestruido/manimce-claude.git
+│
+◇  Repository cloned
+│
+◇  Found 1 skill
+│
+●  Selected 1 skill: manim-community
+│
+◇  79 agents
+◇  Which agents do you want to install to?
+│  Amp, Cline, Codex, Cursor, Droid, Gemini CLI, GitHub Copilot, Kilo Code, Kimi Code CLI, OpenCode, Warp, Zed, AiderDesk, AstrBot, Autohand Code CLI, Augment, IBM Bob, Claude Code, OpenClaw, CodeArts Agent, CodeBuddy, Codemaker, Code Studio, Command Code, Continue, Cortex Code, Crush, Devin for Terminal, ForgeCode, Goose, Grok Build, Hermes Agent, inference.sh, Jazz, Junie, iFlow CLI, Kimchi, Kiro CLI, Kode, Lingma, MCPJam, MiniMax Code, Mistral Vibe, Moxby, Mux, OpenHands, Ona, Pi, Posit Assistant, Qoder, Qoder CN, Qwen Code, Reasonix, Rovo Dev, Roo Code, Tabnine CLI, Terramind, Tinycloud, Trae, Trae CN, Windsurf, ZCode, Zencoder, Zenflow, Neovate, Pochi, AdaL
+│
+◇  Installation scope
+│  Global
+│
+◇  Installation method
+│  Symlink (Recommended)
+
+│
+◇  Installation Summary ─────────────────────────────────────────╮
+│                                                                │
+│  ~\.agents\skills\manim-community                              │
+│    universal: Amp, Cline, Codex, Cursor, Droid +7 more         │
+│    symlink → AdaL, Pochi, Neovate, Zenflow, Zencoder +50 more  │
+│                                                                │
+├────────────────────────────────────────────────────────────────╯
+│
+◇  Proceed with installation?
+│  Yes
+│
+◇  Installation complete
+
+│
+◇  Installed 1 skill ─────────────────────────────────────────────╮
+│                                                                 │
+│  ✓ ~\.agents\skills\manim-community                             │
+│    universal: Amp, Cline, Codex, Cursor, Droid +7 more          │
+│    symlinked: AdaL, Pochi, Neovate, Zenflow, Zencoder +50 more  │
+│                                                                 │
+├─────────────────────────────────────────────────────────────────╯
+
+│
+└  Done!  Review skills before use; they run with full agent permissions.
+
+PS C:\Users\mcmco\manimce-claude>
+```
+
 ### Opção 3 — Manual, em qualquer ferramenta Claude
 
 Copie a pasta da skill para o diretório de skills:
