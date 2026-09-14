@@ -2,10 +2,10 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "manimce-claude",
   "owner": {
-    "name": "havaianasdestruido",
+    "name": "PatoFlamejanteTV",
     "url": "https://github.com/havaianasdestruido"
   },
-  "description": "Skill de referencia para Manim Community Edition (ManimCE) para Claude Code.",
+  "description": "Reference skill for Manim Community Edition (ManimCE) - installation, core concepts, CLI/config, TeX, and a cookbook of recipes.",
   "version": "1.0.0",
   "plugins": [
     {
