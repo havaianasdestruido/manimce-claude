@@ -2,7 +2,7 @@
 
 ## Which version am I installing?
 
-Confirm this is ManimCE before anything else (see SKILL.md's disambiguation table). Package name on PyPI is `manim` (not `manimgl`, not `manimlib`). Once installed, `manim --version` (or the first line of any `manim` command's output) should say `Manim Community v<version>`. If it doesn't, `manimgl` is installed instead.
+Confirm this is ManimCE before anything else (see SKILL.md's disambiguation table). Package name on PyPI is `manim` (not `manimgl`, not `manimlib`). Once installed, `manim --version` (or the first line of any `manim` command's output) should say `Manim Community v<version>`. If it does not, verify which `manim` executable is on `PATH` and which Python environment is active; another environment or installation may be taking precedence. ManimGL normally uses the `manimgl` command and `manimlib` imports, while old ManimCairo code uses the legacy imports listed below.
 
 Why the confusion exists: Manim was Grant Sanderson's (3Blue1Brown) personal project. In 2020 a group of developers forked it into the community-maintained version documented here. In 2021 Grant merged his own experimental OpenGL branch back into his repo as `manimgl`, which continues to diverge with undocumented breaking changes. The pre-2020 version is sometimes called "ManimCairo" and is only useful for re-rendering old 3Blue1Brown videos from source.
 

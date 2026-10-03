@@ -14,7 +14,7 @@ Core `Scene` methods:
 - `self.add(*mobjects)` — puts mobjects on screen instantly, no animation.
 - `self.remove(*mobjects)` — takes them off screen instantly.
 - `self.play(*animations, run_time=1)` — runs animation(s), simultaneously if more than one is passed.
-- `self.wait(seconds=1)` — pause with nothing changing. Always end a scene with at least one `self.wait()`, or the last frame has zero duration.
+- `self.wait(duration=1)` — pause for one second with nothing changing. Always end a scene with at least one `self.wait()`, or the last frame has zero duration.
 - A single file can contain multiple `Scene` subclasses; pass the class name on the CLI to pick one, or `-a` to render all of them.
 
 ## Mobject and VMobject
@@ -82,7 +82,7 @@ Caveat: `.animate` only knows the mobject's start and end *state* — it interpo
 
 ## Custom animations
 
-Subclass `Animation`, pass the target mobject to `super().__init__()`, and override `interpolate_mobject(self, alpha)`. `alpha` runs from `0` (start) to `1` (end) across the animation's `run_time`, already passed through the current `rate_func` inside `self.play`'s machinery — if you want your custom animation to respect a `rate_func` argument, apply `self.rate_func(alpha)` yourself inside `interpolate_mobject` before using it.
+Subclass `Animation`, pass the target mobject to `super().__init__()`, and override `interpolate_mobject(self, alpha)`. `alpha` is the raw progress from `0` (start) to `1` (end) across the animation's `run_time`. If you want your custom animation to respect its configured `rate_func`, apply `self.rate_func(alpha)` yourself inside `interpolate_mobject` before using it, as the example below does.
 
 ```python
 class Count(Animation):

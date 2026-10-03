@@ -9,7 +9,7 @@ Use this order to isolate failures quickly.
 1. Run `python -m manim --version` to verify the interpreter can import Manim.
 2. If `manim` is not on `PATH`, activate the virtual environment or use `uv run manim`.
 3. Run `manim checkhealth` to identify missing external tools.
-4. For ManimPango or Cairo build errors, install the platform system dependencies documented in [installation](/getting-started/installation).
+4. For ManimPango or Cairo build errors, install the platform system dependencies documented in [installation](./installation.md).
 
 ## Scene and render failures
 
