@@ -1,3 +1,7 @@
+---
+title: Core concepts
+---
+
 # Core concepts: Mobject, Animation, Scene
 
 ## Scene
@@ -75,7 +79,7 @@ Caveat: `.animate` only knows the mobject's start and end *state* — it interpo
 
 **Common animations by purpose**:
 - Appear/disappear: `Create`/`Uncreate` (draws the outline progressively), `Write`/`Unwrite` (for text/tex, looks handwritten), `FadeIn`/`FadeOut`, `DrawBorderThenFill`.
-- Change into something else: `Transform`, `ReplacementTransform`, `TransformFromCopy`, `FadeTransform`, `TransformMatchingShapes`, `TransformMatchingTex` (matches sub-parts of two `Tex`/`MathTex` mobjects so shared pieces morph in place instead of cross-fading — see `references/text-and-tex.md`).
+- Change into something else: `Transform`, `ReplacementTransform`, `TransformFromCopy`, `FadeTransform`, `TransformMatchingShapes`, `TransformMatchingTex` (matches sub-parts of two `Tex`/`MathTex` mobjects so shared pieces morph in place instead of cross-fading — see [text and TeX](./text-and-tex.md)).
 - Motion: `Rotate`/`Rotating`, `MoveAlongPath`, `GrowFromCenter`/`GrowFromEdge`/`GrowFromPoint`/`GrowArrow`.
 - Emphasis: `Indicate`, `Circumscribe`, `Flash`, `Wiggle`, `FocusOn`, `ApplyWave`.
 - Composition: `AnimationGroup(*anims)` (play together), `Succession(*anims)` (play in sequence, one `self.play` call), `LaggedStart(*anims, lag_ratio=0.2)` (staggered start times).

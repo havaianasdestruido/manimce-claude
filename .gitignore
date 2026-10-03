@@ -1,0 +1,9 @@
+# Docusaurus generated files
+docs-site/node_modules/
+docs-site/build/
+docs-site/.docusaurus/
+
+# Jekyll generated files
+_site/
+.jekyll-cache/
+.sass-cache/

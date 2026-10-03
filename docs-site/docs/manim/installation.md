@@ -1,3 +1,7 @@
+---
+title: Install ManimCE
+---
+
 # Installing Manim (ManimCE)
 
 ## Which version am I installing?
@@ -97,7 +101,7 @@ uv add git+https://github.com/ManimCommunity/manim.git@main
 
 - **Conda**: good if the person is already a conda user — dependencies like `pycairo` come bundled, so it sidesteps most build issues. Installation steps are identical across Windows/macOS/Linux with conda.
 - **Docker**: the community-maintained image is `manimcommunity/manim`. Good for CI or avoiding local dependency hell entirely.
-- **Jupyter / no local install**: <https://try.manim.community> is an interactive in-browser notebook — good for letting someone try Manim with zero setup. For local Jupyter use, Manim ships a `%%manim` IPython magic.
+- **Jupyter / no local install**: [https://try.manim.community](https://try.manim.community) is an interactive in-browser notebook — good for letting someone try Manim with zero setup. For local Jupyter use, Manim ships a `%%manim` IPython magic.
 - **VS Code**: the third-party "Manim Sideview" extension adds an integrated preview, but is not officially maintained by the Manim team.
 
 ## Troubleshooting

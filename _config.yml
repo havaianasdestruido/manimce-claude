@@ -1,0 +1,14 @@
+title: ManimCE Claude
+description: A focused Manim Community Edition reference skill for AI coding agents.
+url: "https://havaianasdestruido.github.io"
+baseurl: "/manimce-claude"
+repository: havaianasdestruido/manimce-claude
+markdown: kramdown
+exclude:
+  - docs-site
+  - node_modules
+  - package-lock.json
+  - SKILL.md
+  - references
+  - LICENSE
+  - README.md
